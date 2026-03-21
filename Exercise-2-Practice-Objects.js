@@ -100,27 +100,27 @@ Total de episodios: ${this.temporadas * this.episodiosPorTemporada}
 
 //! CHECKPOINT 5:
 //? Crear 3 peliculas y 3 series.
-let pelicula1 = new Pelicula("Inception", "Ciencia ficción", 2010, 148)
-let pelicula2 = new Pelicula("The Dark Knight", "Acción", 2008, 152)
-let pelicula3 = new Pelicula("Interstellar", "Ciencia ficción", 2014, 169)
+// let pelicula1 = new Pelicula("Inception", "Ciencia ficción", 2010, 148)
+// let pelicula2 = new Pelicula("The Dark Knight", "Acción", 2008, 152)
+// let pelicula3 = new Pelicula("Interstellar", "Ciencia ficción", 2014, 169)
 
-let serie1 = new Serie("Breaking Bad", "Drama", 2008, 5)
-let serie2 = new Serie("Stranger Things", "Ciencia ficción", 2016, 4)
-let serie3 = new Serie("The Crown", "Drama histórico", 2016, 4)
+// let serie1 = new Serie("Breaking Bad", "Drama", 2008, 5)
+// let serie2 = new Serie("Stranger Things", "Ciencia ficción", 2016, 4)
+// let serie3 = new Serie("The Crown", "Drama histórico", 2016, 4)
 
-let catalogo = [pelicula1, pelicula2, pelicula3, serie1, serie2, serie3]
+// let catalogo = [pelicula1, pelicula2, pelicula3, serie1, serie2, serie3]
 
-for (let i of catalogo) {
-    i.ficha()
-}
+// for (let i of catalogo) {
+//     i.ficha()
+// }
 
-pelicula1.retirar()
-serie2.retirar()
+// pelicula1.retirar()
+// serie2.retirar()
 
-let contador = 0;
-for (let i of catalogo) {
-    if (i.disponible) {
-        contador++;
-    }
-}
+// let contador = 0;
+// for (let i of catalogo) {
+//     if (i.disponible) {
+//         contador++;
+//     }
+// }
 
