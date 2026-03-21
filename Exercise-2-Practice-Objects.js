@@ -117,7 +117,10 @@ for (let i of catalogo) {
 pelicula1.retirar()
 serie2.retirar()
 
+let contador = 0;
 for (let i of catalogo) {
-    i.estado()
+    if (i.disponible) {
+        contador++;
+    }
 }
 
