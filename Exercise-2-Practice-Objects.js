@@ -79,21 +79,45 @@ Total de episodios: ${this.temporadas * this.episodiosPorTemporada}
 
 //! CHECKPOINT 4:
 //? Crear 2 peliculas y 2 series.
+// let pelicula1 = new Pelicula("Inception", "Ciencia ficción", 2010, 148)
+// let pelicula2 = new Pelicula("The Dark Knight", "Acción", 2008, 152)
+
+// let serie1 = new Serie("Breaking Bad", "Drama", 2008, 5)
+// let serie2 = new Serie("Stranger Things", "Ciencia ficción", 2016, 4)
+
+// pelicula1.duracionFormateada()
+// pelicula1.ficha()
+// pelicula2.duracionFormateada()
+// pelicula2.ficha()
+// serie1.ficha()
+// serie2.ficha()
+
+// pelicula1.retirar()
+// pelicula1.estado()
+
+// serie1.retirar()
+// serie1.estado()
+
+//! CHECKPOINT 5:
+//? Crear 3 peliculas y 3 series.
 let pelicula1 = new Pelicula("Inception", "Ciencia ficción", 2010, 148)
 let pelicula2 = new Pelicula("The Dark Knight", "Acción", 2008, 152)
+let pelicula3 = new Pelicula("Interstellar", "Ciencia ficción", 2014, 169)
 
 let serie1 = new Serie("Breaking Bad", "Drama", 2008, 5)
 let serie2 = new Serie("Stranger Things", "Ciencia ficción", 2016, 4)
+let serie3 = new Serie("The Crown", "Drama histórico", 2016, 4)
 
-pelicula1.duracionFormateada()
-pelicula1.ficha()
-pelicula2.duracionFormateada()
-pelicula2.ficha()
-serie1.ficha()
-serie2.ficha()
+let catalogo = [pelicula1, pelicula2, pelicula3, serie1, serie2, serie3]
+
+for (let i of catalogo) {
+    i.ficha()
+}
 
 pelicula1.retirar()
-pelicula1.estado()
+serie2.retirar()
 
-serie1.retirar()
-serie1.estado()
+for (let i of catalogo) {
+    i.estado()
+}
+
